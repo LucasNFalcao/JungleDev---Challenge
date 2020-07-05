@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.container{
+    display: grid;
+    grid-template: repeat(5, min-content), auto;
+    grid-auto-rows: min-content;
+}
+
+.first-grid{
+    background: url(/resources/banner_image.png);
+    background-size: cover;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.first-grid header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-grid header div{
+    display: flex;
+}
+
+.first-grid header div img{
+    margin-left: 30px;
+}
+
+.first-grid header div ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  
+}
+
+.first-grid header div ul li{
+    color: whitesmoke;
+    list-style: none;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.first-grid header span button{
+    color: white;
+    font-size: 1rem;
+    margin-right: 15px;
+    background-color: #1bc47d;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.first-grid header span a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#div-content-first-grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+#div-content-first-grid section{
+   display: flex;
+   flex-flow: column wrap;
+   align-items: flex-start;
+   padding: 15px;
+   margin: auto 5%;
+   max-width: 50%;
+   height: auto;
+}
+
+#div-content-first-grid section h1{
+    font-size: 3.5rem;
+    color: whitesmoke;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+#div-content-first-grid section p{
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+#div-content-first-grid section span{
+    display: flex;
+    align-items: center;
+}
+
+#div-content-first-grid section span img{
+    width: 100px;
+}
+
+#div-content-first-grid section span a{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+#div-content-first-grid #img-content-first-grid{
+    width: 450px;
+    padding: 15px;
+    margin: auto 5%;
+    max-width: 50%;
+    height: auto;
+}
+
+/*Second Grid of Layout*/
+
+.second-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+.second-grid .first-img-second-grid{
+    max-width: 100px;
+    margin-right: 25px;
+}
+
+.second-grid a{
+    font-size: 1.5rem;
+    color: blueviolet;
+    margin: auto 15px;
+}
+
+
+/*Third Gird of Layout*/
+
+.third-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.section-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.first-div-third-grid{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding: 15px;
+    margin: auto 5%;
+    max-width: 25%;
+    height: auto;
+}
+
+.first-div-third-grid h1{
+    font-size: 2.5rem;
+    color: black;   
+}
+
+.first-div-third-grid p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.first-div-third-grid a{
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+
+.section-flexbox img{
+    width: 50%;
+    padding: 15px;
+    margin: auto 5%;
+    max-width: 75%;
+    height: auto; 
+}
+
+
+.second-section-third-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.second-section-third-grid h1{
+    font-size: 2rem;
+    color: black;
+    margin: 5px;
+}
+
+.second-section-third-grid p{
+    font-size: 1.2rem;
+    color: black;
+    margin: 5px;
+}
+
+.second-section-third-grid form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px;
+
+}
