@@ -202,31 +202,38 @@ body{
 
 /*Third Gird of Layout*/
 
+
 .third-grid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-gap: 10px;
+    grid-template-areas:
+    ". section1-1 section1-2 ."
+    ". section2 section2 ."
+    ". section3-1 section3-2 ."
+    ". section4 section4 ."
+    ". section5 section5 ."
+    ;
 }
 
 .section-flexbox{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.first-div-third-grid{
-    display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.first-section-third-grid{
+    display: grid;
+    grid-area: section1-1;
     padding: 15px;
     margin: auto 2.5%;
-    max-width: 25%;
+    width: 75%;
     height: auto;
 }
 
-.first-div-third-grid h1{
+.first-section-third-grid h1{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 700; /*originalmente pra ser 500*/
@@ -235,7 +242,7 @@ body{
     color: #3D3D3D;
 }
 
-.first-div-third-grid p{
+.first-section-third-grid p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -244,7 +251,7 @@ body{
     color: #000000;
 }
 
-.first-div-third-grid a{
+.first-section-third-grid a{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -253,7 +260,8 @@ body{
     color: #5E20A4;
 }
 
-.section-flexbox img{
+.first-img-third-grid{
+    grid-area: section1-2;
     width: 604px; /*original 584px*/
     height: 412px; /*original 392px*/
     padding: 15px;
@@ -263,6 +271,7 @@ body{
 
 
 .second-section-third-grid{
+    grid-area: section2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,14 +279,27 @@ body{
 }
 
 .second-section-third-grid h1{
-    font-size: 2rem;
-    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3D3D3D;
     margin: 5px;
 }
 
 .second-section-third-grid p{
-    font-size: 1.2rem;
-    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #3D3D3D;
     margin: 5px;
 }
 
@@ -290,31 +312,105 @@ body{
 }
 
 ::placeholder{
-    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    
+    display: flex;
+    align-items: center;
+    color: #3D3D3D;
     opacity: 1;
 }
 
 .second-section-third-grid form input{
-    width: 200px;
+    width: 232px;
+    height: 48px;
 	margin: 0 20px;
 	padding: 10px;
     margin-bottom: 10px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
-.second-section-third-grid form button{
-    background: green;
-    color: white;
-    border: none;
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 18px;
+.second-section-third-grid form button{ /*perguntar sobre erro da font-family*/
+    background: #00C88C;
+    border-radius: 4px;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+
+    color: #FFFFFF;
     letter-spacing: 0.2px;
-    text-align: center;
     width: 130px;
     height: 60px;
-    border-radius: 5px;
     padding: 5px;
 
     cursor: pointer;
     outline: none;
+}
+
+
+.second-img-third-grid{
+    display: grid;
+    grid-area: section3-1;
+    width: 476px; /*original 456px*/
+    height: 356px; /*original 336px*/
+    padding: 15px;
+    margin: auto 2.5%;
+}
+
+.third-section-third-grid{
+    display: grid;
+    grid-area: section3-2;
+    padding: 15px;
+    margin: auto 2.5%;
+    width: 75%;
+    height: auto;
+}
+
+.third-section-third-grid h1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    
+    display: flex;
+    align-items: center;
+    color: #3D3D3D;
+}
+
+.third-section-third-grid p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: #3D3D3D;
+
+}
+
+
+.third-section-third-grid .paragraph-purple{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;  
+    
+    text-decoration-line: underline;
+    color: #5E20A4;
 }
