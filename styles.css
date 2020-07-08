@@ -1,19 +1,21 @@
 body{
     margin: 0;
     padding: 0;
-    font-size: 14px;
 }
 
 .container{
     display: grid;
-    grid-template: repeat(5, min-content), auto;
+    grid-template: repeat(5, min-content) / auto;
     grid-auto-rows: min-content;
 }
 
 .first-grid{
     background: url(/resources/banner_image.png);
     background-size: cover;
+    background-repeat: no-repeat;
     background-color: blueviolet;
+    width: 100%;
+    height: 616px;
     display: flex;
     flex-direction: column;
 
@@ -52,7 +54,7 @@ body{
     list-style: none;
     margin-left: 20px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 14px;
 }
 
 .first-grid header span button{
@@ -66,7 +68,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -79,7 +81,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -109,7 +111,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 2.85rem;
+    font-size: 40px;
     line-height: 48px;
 }
 
@@ -117,7 +119,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.28rem;
+    font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
 }
@@ -137,7 +139,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.14rem;
+    font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
 
@@ -159,7 +161,8 @@ body{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color: whitesmoke;
+    background: #FFFFFF;
+    border: 1px solid #DFDFDF;
 }
 
 .second-grid .first-img-second-grid{
@@ -174,7 +177,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.14rem;
+    font-size: 16px;
     line-height: 24px;
     color: #5E20A4;
 
@@ -189,7 +192,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.14rem;
+    font-size: 16px;
     line-height: 24px;
     color: #000000;
 
@@ -205,15 +208,21 @@ body{
 
 .third-grid{
     display: grid;
-    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-columns: 7% 43% 43% 7%;
     grid-gap: 10px;
     grid-template-areas:
     ". section1-1 section1-2 ."
+    ". line1 line1 ."
     ". section2 section2 ."
+    ". line2 line2 ."
     ". section3-1 section3-2 ."
+    ". line3 line3 ."
     ". section4 section4 ."
+    ". line4 line4 ."
     ". section5 section5 ."
     ;
+    background-color: #F2F2F2;
+    
 }
 
 .section-flexbox{
@@ -224,11 +233,43 @@ body{
     margin-right: 5px;
 }
 
+#span1{
+    grid-area: line1;
+    margin: 80px auto;
+    width: 75%;
+    height: 0px;
+    border: 2px solid #DFDFDF;
+}
+
+#span2{
+    grid-area: line2;
+    margin: 80px auto;
+    width: 75%;
+    height: 0px;
+    border: 2px solid #DFDFDF;
+}
+
+#span3{
+    grid-area: line3;
+    margin: 80px auto;
+    width: 75%;
+    height: 0px;
+    border: 2px solid #DFDFDF;
+}
+
+#span4{
+    grid-area: line4;
+    margin: 80px auto;
+    width: 75%;
+    height: 0px;
+    border: 2px solid #DFDFDF;
+}
+
 .first-section-third-grid{
     display: grid;
     grid-area: section1-1;
     padding: 15px;
-    margin: auto 2.5%;
+    margin: 80px 2.5% auto 2.5%;
     width: 75%;
     height: auto;
 }
@@ -237,7 +278,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 700; /*originalmente pra ser 500*/
-    font-size: 2rem;
+    font-size: 28px;
     line-height: 32px;
     color: #3D3D3D;
 }
@@ -246,7 +287,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.14rem;
+    font-size: 16px;
     line-height: 28px;
     color: #000000;
 }
@@ -255,7 +296,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.14rem;
+    font-size: 16px;
     line-height: 24px;
     color: #5E20A4;
 }
@@ -265,10 +306,10 @@ body{
     width: 604px; /*original 584px*/
     height: 412px; /*original 392px*/
     padding: 15px;
-    margin: auto 2.5%;
+    margin: 80px 2.5% auto 2.5%;
+    justify-self: flex-start;
     
 }
-
 
 .second-section-third-grid{
     grid-area: section2;
@@ -281,7 +322,7 @@ body{
 .second-section-third-grid h1{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700; /*original 500*/
     font-size: 22px;
     line-height: 32px;
 
@@ -366,9 +407,10 @@ body{
     display: grid;
     grid-area: section3-1;
     width: 476px; /*original 456px*/
-    height: 356px; /*original 336px*/
+    height: 356px;  /*original 336px*/ 
     padding: 15px;
     margin: auto 2.5%;
+    
 }
 
 .third-section-third-grid{
@@ -378,12 +420,13 @@ body{
     margin: auto 2.5%;
     width: 75%;
     height: auto;
+    justify-self: flex-start;
 }
 
 .third-section-third-grid h1{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700; /*original 500*/
     font-size: 28px;
     line-height: 32px;
     
@@ -413,4 +456,272 @@ body{
     
     text-decoration-line: underline;
     color: #5E20A4;
+}
+
+.fourth-section-third-grid{
+    grid-area: section4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;   
+}
+
+.fourth-section-third-grid h1{
+    height: 32px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700; /*original 500*/
+    font-size: 28px;
+    line-height: 32px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #3D3D3D;
+}
+
+.fourth-section-third-grid p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #3D3D3D;
+    
+    width: 50%;
+}
+
+.fourth-section-third-grid .paragraph-blueviolet{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #5E20A4;
+}
+
+.fourth-section-third-grid img{
+    width: 984px;
+    height: 392px;
+    margin-top: 64px;
+
+}
+
+.fifth-section-third-grid{
+    grid-area: section5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto 2.5% 80px 2.5%;
+}
+
+.fifth-section-third-grid img{
+    width: 216px;
+    height: 96px;
+}
+
+.fifth-section-third-grid h1{
+    height: 32px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700; /*original 500*/
+    font-size: 28px;
+    line-height: 32px;
+    margin: 40px auto;
+
+    color: #3D3D3D
+
+}
+
+.fifth-section-third-grid p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    width: 50%;
+
+    color: #3D3D3D
+}
+
+.first-div-fourth-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+}
+
+.first-div-fourth-grid h1{
+    height: 32px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+
+    color: #3D3D3D;
+}
+
+.first-div-fourth-grid p{
+    height: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #3D3D3D;
+}
+
+.second-div-fourth-grid{
+    background: #5E20A4;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 19px 25px;
+}
+
+.second-div-fourth-grid img{
+    flex: 1;
+    margin-right: 21px;
+    /* width: 30px;
+    height: 30px; */
+
+}
+
+.third-div-fourth-grid {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+
+}
+
+.third-div-fourth-grid--title{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.third-div-fourth-grid--subtitle{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+#second-p-fourth-grid{
+    height: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #5E20A4;
+}
+
+
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.first-div-footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0px auto;
+}
+
+footer .first-ul-footer,
+footer .second-ul-footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .first-ul-footer li{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3D3D3D;
+    list-style: none;
+    margin-left: 15px;
+    text-align: center;
+    
+}
+
+
+footer .second-ul-footer li{
+    list-style: none;
+    margin-left: 5px;
+}
+
+.fa {
+    padding: 20px;
+    margin: 5px 2px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #DFDFDF;
+    border-radius: 50%;
+    
+  }
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram{
+    color: #3D3D3D;
+}
+
+
+footer .diviser-footer{
+    margin: 58px auto 32px;
+    width: 75%;
+    height: 0px;
+    border: 2px solid #DFDFDF;
+}
+
+footer .copyright{
+    margin: 0px auto 30px;
+    float: right;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-align: right;
+
+    color: #3D3D3D;
+    opacity: 0.6;
 }
