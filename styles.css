@@ -27,11 +27,11 @@ body{
     justify-content: space-between;
 }
 
-.first-grid header div{
+.first-grid header nav{
     display: flex;
 }
 
-.first-grid header div img{
+.first-grid header nav img{
     margin-left: 30px;
     width: 48px;
     height: 64px;
@@ -39,14 +39,15 @@ body{
     top: 0px;
 }
 
-.first-grid header div ul{
+.first-grid header nav ul{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 28px;
   
 }
 
-.first-grid header div ul li{
+.first-grid header nav ul li{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -156,7 +157,7 @@ body{
     width: 416px; /*original 316px*/
     height: 390px; /*original 290px*/
     padding: 15px;
-    margin-left: 10%;
+    margin-left: 100px;
     max-width: 60%;
 }
 
@@ -242,7 +243,7 @@ body{
 #span1{
     grid-area: line1;
     margin: 80px auto;
-    width: 75%;
+    width: 65%;
     height: 0px;
     border: 2px solid #DFDFDF;
 }
@@ -250,7 +251,7 @@ body{
 #span2{
     grid-area: line2;
     margin: 80px auto;
-    width: 75%;
+    width: 65%;
     height: 0px;
     border: 2px solid #DFDFDF;
 }
@@ -258,7 +259,7 @@ body{
 #span3{
     grid-area: line3;
     margin: 80px auto;
-    width: 75%;
+    width: 65%;
     height: 0px;
     border: 2px solid #DFDFDF;
 }
@@ -266,7 +267,7 @@ body{
 #span4{
     grid-area: line4;
     margin: 80px auto;
-    width: 75%;
+    width: 65%;
     height: 0px;
     border: 2px solid #DFDFDF;
 }
