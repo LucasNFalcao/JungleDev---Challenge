@@ -10,14 +10,14 @@ body{
 }
 
 .first-grid{
-    background: url(/resources/banner_image.png);
-    background-size: cover;
+    background-image: url(/resources/banner_image.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: blueviolet;
     width: 100%;
-    height: 616px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 150px;
 
 }
 
@@ -58,18 +58,18 @@ body{
 }
 
 .first-grid header span button{
-    color: #FFFFFF;
     margin-right: 15px;
     background-color: #00C88C;
     padding: 15px 25px;
-    text-align: center;
-    border-radius: 4px;
+    border-radius: 6px;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .first-grid header span a{
@@ -88,9 +88,12 @@ body{
 #div-content-first-grid{
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 10%;
+    justify-content: center;
+    margin: 100px auto 50px;
+    width: 100%;
+    height: auto;
 }
 
 #div-content-first-grid section{
@@ -98,8 +101,7 @@ body{
    flex-flow: column wrap;
    align-items: flex-start;
    padding: 15px;
-   margin: auto 5%;
-   max-width: 50%;
+   max-width: 40%;
    height: auto;
 }
 
@@ -113,6 +115,8 @@ body{
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
+
+    width: 75%;
 }
 
 #div-content-first-grid section p{
@@ -122,6 +126,8 @@ body{
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
+
+    width: 85%;
 }
 
 #div-content-first-grid section span{
@@ -146,12 +152,12 @@ body{
     text-decoration-line: underline;
 }
 
-#div-content-first-grid #img-content-first-grid{
-    width: 316px;
-    height: 290px;
+#img-content-first-grid{
+    width: 416px; /*original 316px*/
+    height: 390px; /*original 290px*/
     padding: 15px;
-    margin: auto 5%;
-    max-width: 50%;
+    margin-left: 10%;
+    max-width: 60%;
 }
 
 /*Second Grid of Layout*/
@@ -269,9 +275,12 @@ body{
     display: grid;
     grid-area: section1-1;
     padding: 15px;
-    margin: 80px 2.5% auto 2.5%;
-    width: 75%;
+    padding-left: 100px;
+    margin: 80px 2.5% auto 108px;
+    /* width: 75%; */
     height: auto;
+    justify-self: stretch;
+    align-self: stretch;
 }
 
 .first-section-third-grid h1{
@@ -406,10 +415,13 @@ body{
 .second-img-third-grid{
     display: grid;
     grid-area: section3-1;
-    width: 476px; /*original 456px*/
-    height: 356px;  /*original 336px*/ 
+    max-width: 75%; /*original 456px*/
+    max-height: 356px;  /*original 336px*/ 
     padding: 15px;
-    margin: auto 2.5%;
+    padding-left: 100px;
+    margin: 80px 2.5% auto 108px;
+    justify-self: stretch;
+    align-self: stretch;
     
 }
 
@@ -447,7 +459,7 @@ body{
 }
 
 
-.third-section-third-grid .paragraph-purple{
+#paragraph-purple{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -506,8 +518,14 @@ body{
 }
 
 .fourth-section-third-grid img{
-    width: 984px;
-    height: 392px;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    height: auto;
+    /* width: 984px;
+    height: 392px; */
+    margin: 80px 2.5% auto 108px;
     margin-top: 64px;
 
 }
@@ -686,15 +704,14 @@ footer .second-ul-footer li{
 }
 
 .fa {
-    padding: 20px;
-    margin: 5px 2px;
+    padding: 15px;
     font-size: 30px;
-    width: 30px;
+    margin: 5px 5px;
+    width: auto;
     text-align: center;
     text-decoration: none;
     border: 1px solid #DFDFDF;
-    border-radius: 50%;
-    
+    border-radius: 50%;    
   }
 
 .fa-facebook,
