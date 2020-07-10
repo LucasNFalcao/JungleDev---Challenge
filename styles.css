@@ -10,8 +10,8 @@ body{
 }
 
 .first-grid{
-    background-image: url(/resources/banner_image.png);
-    background-size: 100% 100%;
+    background-image: url(resources/banner_image.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: blueviolet;
     width: 100%;
@@ -61,8 +61,9 @@ body{
 .first-grid header span button{
     margin-right: 15px;
     background-color: #00C88C;
-    padding: 15px 25px;
-    border-radius: 6px;
+    border-radius: 4px;
+    width: 234px;
+    height: 44px;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -71,6 +72,8 @@ body{
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
+
+    cursor: pointer;
 }
 
 .first-grid header span a{
@@ -137,7 +140,10 @@ body{
 }
 
 #div-content-first-grid section span img{
-    width: 100px;
+    width: 48px;
+    height: 48px;
+
+    cursor: pointer;
 }
 
 #div-content-first-grid section span a{
@@ -154,8 +160,8 @@ body{
 }
 
 #img-content-first-grid{
-    width: 416px; /*original 316px*/
-    height: 390px; /*original 290px*/
+    width: 316px;
+    height: 290px;
     padding: 15px;
     margin-left: 100px;
     max-width: 60%;
@@ -278,7 +284,6 @@ body{
     padding: 15px;
     padding-left: 100px;
     margin: 80px 2.5% auto 108px;
-    /* width: 75%; */
     height: auto;
     justify-self: stretch;
     align-self: stretch;
@@ -287,7 +292,7 @@ body{
 .first-section-third-grid h1{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 700; /*originalmente pra ser 500*/
+    font-weight: 500;
     font-size: 28px;
     line-height: 32px;
     color: #3D3D3D;
@@ -313,8 +318,8 @@ body{
 
 .first-img-third-grid{
     grid-area: section1-2;
-    width: 604px; /*original 584px*/
-    height: 412px; /*original 392px*/
+    width: 584px;
+    height: 392px;
     padding: 15px;
     margin: 80px 2.5% auto 2.5%;
     justify-self: flex-start;
@@ -332,7 +337,7 @@ body{
 .second-section-third-grid h1{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 700; /*original 500*/
+    font-weight: 500;
     font-size: 22px;
     line-height: 32px;
 
@@ -378,7 +383,7 @@ body{
 .second-section-third-grid form input{
     width: 232px;
     height: 48px;
-	margin: 0 20px;
+	margin: 0 12px;
 	padding: 10px;
     margin-bottom: 10px;
 
@@ -388,7 +393,7 @@ body{
     border-radius: 4px;
 }
 
-.second-section-third-grid form button{ /*perguntar sobre erro da font-family*/
+.second-section-third-grid form button{
     background: #00C88C;
     border-radius: 4px;
 
@@ -397,15 +402,11 @@ body{
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;  
 
     color: #FFFFFF;
-    letter-spacing: 0.2px;
-    width: 130px;
-    height: 60px;
+    width: 96px;
+    height: 48px;
     padding: 5px;
 
     cursor: pointer;
@@ -416,11 +417,12 @@ body{
 .second-img-third-grid{
     display: grid;
     grid-area: section3-1;
-    max-width: 75%; /*original 456px*/
-    max-height: 356px;  /*original 336px*/ 
+    width: 456px;
+    height: 336px;
     padding: 15px;
     padding-left: 100px;
-    margin: 80px 2.5% auto 108px;
+    margin-top: 80px;
+    margin-left: 108px;
     justify-self: stretch;
     align-self: stretch;
     
@@ -439,7 +441,7 @@ body{
 .third-section-third-grid h1{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 700; /*original 500*/
+    font-weight: 500;
     font-size: 28px;
     line-height: 32px;
     
@@ -483,12 +485,10 @@ body{
     height: 32px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 700; /*original 500*/
+    font-weight: 500;
     font-size: 28px;
     line-height: 32px;
 
-    display: flex;
-    align-items: center;
     text-align: center;
     color: #3D3D3D;
 }
@@ -524,8 +524,8 @@ body{
     align-self: center;
     width: 80%;
     height: auto;
-    /* width: 984px;
-    height: 392px; */
+    width: 984px;
+    height: 392px;
     margin: 80px 2.5% auto 108px;
     margin-top: 64px;
 
@@ -549,7 +549,7 @@ body{
     height: 32px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 700; /*original 500*/
+    font-weight: 500;
     font-size: 28px;
     line-height: 32px;
     margin: 40px auto;
@@ -606,14 +606,14 @@ body{
     border-radius: 4px;
     display: flex;
     align-items: center;
-    padding: 19px 25px;
+    width: 281px;
+    height: 68px;
 }
 
 .second-div-fourth-grid img{
     flex: 1;
-    margin-right: 21px;
-    /* width: 30px;
-    height: 30px; */
+    width: 30px;
+    height: 30px;
 
 }
 
@@ -622,6 +622,7 @@ body{
     display: flex;
     flex-direction: column;
     white-space: nowrap;
+    margin-right: 24px;
 
 }
 
@@ -678,6 +679,11 @@ footer{
     margin: 0px auto;
 }
 
+.first-div-footer img{
+    width: 100px;
+    height: 50px;
+}
+
 footer .first-ul-footer,
 footer .second-ul-footer{
     display: flex;
@@ -706,7 +712,6 @@ footer .second-ul-footer li{
 
 .fa {
     padding: 15px;
-    font-size: 30px;
     margin: 5px 5px;
     width: auto;
     text-align: center;
